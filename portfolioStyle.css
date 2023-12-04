@@ -1,29 +1,39 @@
 body{
-    background-image: url();
-    background-color: gray;
+    background-image: linear-gradient(var(--background), var(--color3));
+    background-color: var(--background);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+* {
+margin: 0;
+padding: 0;
 }
 
 :root{
     --color1:white ;
     --color2:yellow;
     --color3: purple;
+    --background: black;
 }
 
 footer{
-    color: var(--color3);
-    font-family: Arial, Helvetica, sans-serif
+    color: var(--color2);
+    font-family: Arial, Helvetica, sans-serif;
+    float: bottom;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    padding-top: 60%
 }
 
 .center{
     margin: auto;
     width: 20%;
     text-align: center;
-    padding: 10px;
 }
 
-.navbar li a {
+.navbar li a{
     display: block;
     list-style-type: none;
     color: var(--color1);
@@ -37,16 +47,37 @@ footer{
     background-color: cadetblue;
   }
 
+  .navbar a{
+    
+  }
+
  .navbar li a:hover {
     background-color: var(--color3);
     color: var(--color2);}
 
  .navbar li{
-    float: left;
+    float: right;
+    margin: 2rem;
+    display: list-item;
  }
 
  h1{
     color: var(--color1);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    display: block;
+    padding-top: 20%;
  }
+
+ .contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    display: inline-block;
+}
