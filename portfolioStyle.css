@@ -23,8 +23,8 @@ footer{
     float: bottom;
     margin: auto;
     width: 20%;
+    background-color: black;
     text-align: center;
-    padding-top: 60%
 }
 
 .center{
@@ -48,7 +48,8 @@ footer{
   }
 
   .navbar a{
-    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
   }
 
  .navbar li a:hover {
@@ -56,9 +57,12 @@ footer{
     color: var(--color2);}
 
  .navbar li{
-    float: right;
-    margin: 2rem;
-    display: list-item;
+    margin: auto 2rem;
+    margin-top: 2rem;
+    display: flex;
+    max-width: 20%;
+    float: left;
+    padding-left: 20rem;
  }
 
  h1{
@@ -66,13 +70,20 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     display: block;
-    padding-top: 20%;
+    justify-content: center;
  }
+
+h2, h3{
+    color: var(--color3);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
  .contact-details {
     font-size: 2.4rem;
-    text-shadow: 2px 2px 1px #1f1f1f;
-    transition: transform 0.3s ease-out;
+    display:inline-block;
+    padding: 1rem;
+    
 }
 
 .button {
@@ -80,4 +91,47 @@ footer{
     padding: 1rem 2rem;
     border-radius: 2px;
     display: inline-block;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.projectssection{
+    background-color: var(--background);
+}
+
+.project-image {
+    width: 100%;
+    object-fit: cover;
+    padding-left: 2rem;
+}
+
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    text-align: center;
+}
+
+a p{
+    color: var(--color1);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem;
+}
+
+.bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 96%;
+        height: 50vh;
+        padding: 0 2rem;
 }
